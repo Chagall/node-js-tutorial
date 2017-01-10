@@ -1,0 +1,43 @@
+body {
+  font: 14px "Roboto", Helvetica, Arial, sans-serif;
+  background-color: black;
+  margin: 0px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.title-container{
+  position: relative;
+  width: 100%;
+}
+
+.page-title {
+  font: 48px "Roboto";
+  color: firebrick;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.title-image{
+  top: 0;
+  object-fit: cover;
+}
+
+.character-container{
+  position: relative;
+  width: 100%;
+}
+
+.character-name {
+  color: white;
+  text-align: center;
+}
