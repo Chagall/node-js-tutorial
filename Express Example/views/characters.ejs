@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Characters</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link rel='stylesheet' href='/stylesheets/header.css' />
+    </head>
+    <body>
+        <% include templates/header.ejs %>
+        <h1>Characters Page</h1>
+        <h2>List of Characters</h2>
+        <% for(var i = 0; i < 8; i++) { %>
+            <p class="character-name"><%= charactersList[i].name %></p>
+        <% } %>
+    </body>
+</html>
