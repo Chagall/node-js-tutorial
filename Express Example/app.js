@@ -14,6 +14,7 @@ var characters = require('./routes/characters');
 var episodes = require('./routes/episodes');
 
 var app = express();
+var wesbiteName = "pennydreadfulseries.online"
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

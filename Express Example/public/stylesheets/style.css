@@ -43,6 +43,7 @@ h2 {
   height: 152px;
 }
 
-h1 {
+.page-title {
   color: white;
+  text-align: center;
 }
