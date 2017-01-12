@@ -15,8 +15,6 @@ var episodes = require('./routes/episodes');
 
 var app = express();
 
-app.locals.characters = require('./characters.json');
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

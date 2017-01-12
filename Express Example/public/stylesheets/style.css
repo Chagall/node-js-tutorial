@@ -21,7 +21,26 @@ h2 {
 
 .character-name {
   color: white;
-  text-align: center;
+  text-align: justify;
+}
+
+.character-description {
+  color: lightcoral;
+  text-align: justify;
+}
+
+.character-image {
+  width: 144px;
+  height: 144px;
+  float: left;
+  margin: 16px;
+}
+
+.character-description-container {
+  float: left;
+  margin: 16px;
+  width: auto;
+  height: 152px;
 }
 
 h1 {

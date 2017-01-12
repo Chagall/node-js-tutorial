@@ -9,8 +9,12 @@
         <% include templates/header.ejs %>
         <h1>Characters Page</h1>
         <h2>List of Characters</h2>
-        <% for(var i = 0; i < 8; i++) { %>
-            <p class="character-name"><%= charactersList[i].name %></p>
-        <% } %>
+        <% charactersList.forEach(function(character){ %>
+        <div class="character-description-container">
+            <img src="/images/<%= character.name %>.png" alt="Character Image" class="character-image">
+            <p class="character-name"><%= character.name %></p>
+            <p class="character-description"><%= character.description %></p>
+        </div>
+        <% }); %>
     </body>
 </html>
