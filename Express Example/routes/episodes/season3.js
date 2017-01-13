@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET episodes page. */
 router.get('/', function(req, res) {
-    res.render('episodes');
+    res.render('episodes/season3');
 });
 
 module.exports = router;

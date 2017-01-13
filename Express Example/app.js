@@ -12,6 +12,9 @@ var index = require('./routes/index');
 var about = require('./routes/about');
 var characters = require('./routes/characters');
 var episodes = require('./routes/episodes');
+var season1 = require('./routes/episodes/season1');
+var season2 = require('./routes/episodes/season2');
+var season3 = require('./routes/episodes/season3');
 
 var app = express();
 var wesbiteName = "pennydreadfulseries.online"
@@ -35,6 +38,9 @@ app.use('/', index);
 app.use('/about', about);
 app.use('/characters', characters);
 app.use('/episodes', episodes);
+app.use('/episodes/season1', season1);
+app.use('/episodes/season2', season2);
+app.use('/episodes/season3', season3);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
