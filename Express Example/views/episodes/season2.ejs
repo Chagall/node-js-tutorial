@@ -1,12 +1,33 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
     <head>
         <title>About</title>
         <link rel='stylesheet' href='/stylesheets/style.css' />
         <link rel='stylesheet' href='/stylesheets/header.css' />
+        <link rel='stylesheet' href='/stylesheets/episodes.css' />
     </head>
     <body>
         <% include ../templates/header.ejs %>
-        <h1 class="page-title">Season 2</h1>
+        <h1 class="page-title"><%= episodesList.name%></h1>
+        <p class="bold">Number of episodes: <span class="description"><%= episodesList.numberOfEpisodes%></span></p>
+        <p class="bold">Season Premiere Date: <span class="description"><%= episodesList.seasonPremiereDate%></span></p>
+        <p class="bold">Season Finale Date: <span class="description"><%= episodesList.seasonFinaleDate%></span></p>
+        <h2>Description</h2>
+        <p class="description"><%= episodesList.description%></p>
+        <h2>Plot</h2>
+        <p class="description"><%= episodesList.plot%></p>
+        <h2>Episodes</h2>
+        <% episodesList.episodes.forEach(function(episode){ %>
+            <div class="episode-container">
+                <img src="/images/Evelyn Poole.png" alt="Episode Image" class="episode-image">
+                <p><%= episode.number %></p>
+                <p><%= episode.name %></p>
+                <p><%= episode.writtenBy %></p>
+                <p><%= episode.directedBy %></p>
+                <p><%= episode.airingDate %></p>
+                <p><%= episode.rating %></p>
+                <p><%= episode.plot %></p>
+            </div>
+        <% }); %>
     </body>
 </html>

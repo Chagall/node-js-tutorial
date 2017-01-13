@@ -4,12 +4,26 @@
         <title>Episodes</title>
         <link rel='stylesheet' href='/stylesheets/style.css' />
         <link rel='stylesheet' href='/stylesheets/header.css' />
+        <link rel='stylesheet' href='/stylesheets/episodes.css' />
     </head>
     <body>
         <% include templates/header.ejs %>
-        <h1 class="page-title">Episodes Page</h1>
-        <p class="links"><a href="/episodes/season1">Season 1</a></p>
-        <p class="links"><a href="/episodes/season2">Season 2</a></p>
-        <p class="links"><a href="/episodes/season3">Season 3</a></p>
+        <h1 class="page-title">Episodes</h1>
+
+        <div class="season-container">
+            <p class="season-links-p"><a href="/episodes/season1" class="season-links-a">Season 1</a></p>
+            <a href="/episodes/season1"><img src="/images/Season 1.jpg" class="season-image"></a>
+        </div>
+
+        <div class="season-container">
+            <p class="season-links-p"><a href="/episodes/season2" class="season-links-a">Season 2</a></p>
+            <a href="/episodes/season2"><img src="/images/Season 2.jpg" class="season-image" href="/episodes/season2"></a>
+        </div>
+
+        <div class="season-container">
+            <p class="season-links-p"><a href="/episodes/season3" class="season-links-a">Season 3</a></p>
+            <a href="/episodes/season3"><img src="/images/Season 3.jpg" class="season-image" href="/episodes/season3"></a>
+        </div>
+
     </body>
 </html>
