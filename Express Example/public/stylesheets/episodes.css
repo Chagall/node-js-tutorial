@@ -2,6 +2,7 @@
     height: 33%;
     width: 33%;
     display: inline-block;
+    margin-bottom: 48px;
 }
 
 .season-image {
@@ -38,8 +39,20 @@
 .episode-container {
     float: left;
     margin: 16px;
-    width: 100%;
+    width: 95%;
     height: auto;
     color: white;
+}
+
+.episode-image {
+    width: 200px;
+    height: 256px;
+    float: left;
+    margin:16px;
+}
+
+.episode-description {
+    margin-right: 32px;
+    text-align: justify;
 }
 

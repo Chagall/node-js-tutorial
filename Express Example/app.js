@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 /*
-    Requires
+    Routes Requires
  */
 var index = require('./routes/index');
 var about = require('./routes/about');
@@ -17,7 +17,7 @@ var season2 = require('./routes/episodes/season2');
 var season3 = require('./routes/episodes/season3');
 
 var app = express();
-var wesbiteName = "pennydreadfulseries.online"
+var wesbiteName = "pennydreadfulseries.online";
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
