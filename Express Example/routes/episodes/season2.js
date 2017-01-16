@@ -8,10 +8,10 @@ Season = require('../../model/season');
 var seasonList;
 var episodesList;
 
-/* GET episodes page. */
+/* GET season 2 episodes page. */
 router.get('/', function(req, res) {
     mongoose.connect('mongodb://localhost/pennydreadful');
-
+/*
     Season.getSeasonByName("Season 2", function(err, season) {
         if(err){
             mongoose.disconnect();
@@ -28,13 +28,24 @@ router.get('/', function(req, res) {
         episodesList = episodes;
 
     });
+    */
 
-    res.render('episodes/season2', {
-        episodesList: episodesList,
-        season: seasonList
-    });
-
-    mongoose.disconnect();
+    Season.getSeasonByName("Season 2")
+        .then(function(instance){
+            seasonList = instance;
+            return Episode.getEpisodesBySeason(2);
+        })
+        .then(function(instance){
+            episodesList = instance;
+            res.render('episodes/season2', {
+                episodesList: episodesList,
+                season: seasonList
+            });
+            mongoose.disconnect();
+        })
+        .catch(function(err){
+            console.log(err);
+        });
 });
 
 module.exports = router;

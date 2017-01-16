@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
     Routes Requires
  */
 var index = require('./routes/index');
+var home = require('./routes/home');
 var about = require('./routes/about');
 var characters = require('./routes/characters');
 var episodes = require('./routes/episodes');
@@ -35,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
     Uses
 */
 app.use('/', index);
+app.use('/home', home);
 app.use('/about', about);
 app.use('/characters', characters);
 app.use('/episodes', episodes);

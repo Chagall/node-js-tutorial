@@ -1,57 +1,18 @@
 body {
-  font: 14px "Roboto", Helvetica, Arial, sans-serif;
   background-color: black;
   margin: 0;
 }
 
-h2 {
-  color: white;
-  text-align: center;
-  margin: 16px;
-}
-
-.title-image{
-  top: 0;
-  object-fit: cover;
-}
-
-.character-container{
-  position: relative;
-  width: 100%;
-}
-
-.character-name {
-  color: white;
-  text-align: justify;
-}
-
-.character-description {
-  color: lightcoral;
-  text-align: justify;
-}
-
-.character-image {
-  width: 144px;
-  height: 144px;
-  float: left;
-  margin: 16px;
-}
-
-.character-description-container {
-  float: left;
-  margin: 16px;
-  width: auto;
-  height: 152px;
-}
-
-.page-title {
+h1 {
   font: 48px "Roboto", Helvetica, Arial, sans-serif;
   color: white;
   text-align: center;
   margin: 48px;
 }
 
-.links {
-  color: firebrick;
+h2 {
+  font: 32px "Roboto", Helvetica, Arial, sans-serif;
+  color: white;
   text-align: center;
+  margin: 16px;
 }

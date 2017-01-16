@@ -32,5 +32,5 @@ var Season = module.exports = mongoose.model('Season', seasonSchema);
 
 // Get Season By Name
 module.exports.getSeasonByName = function(name, callback){
-    Season.findOne({"name": name}, callback);
+    return Season.findOne({"name": name}, callback).exec();
 };

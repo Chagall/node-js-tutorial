@@ -1,3 +1,4 @@
+/* Seasons Page */
 .season-container {
     height: 33%;
     width: 33%;
@@ -23,16 +24,18 @@
     text-decoration: none;
 }
 
-.description {
-    font: 16px "Roboto", Helvetica, Arial, sans-serif;
-    color: lightcoral;
-    margin-left: 16px;
-}
+/* Episodes Page */
 
 .bold {
     font: 16px "Roboto-Bold", Helvetica, Arial, sans-serif;
     color: white;
     text-align: justify;
+    margin-left: 16px;
+}
+
+.description {
+    font: 16px "Roboto", Helvetica, Arial, sans-serif;
+    color: lightcoral;
     margin-left: 16px;
 }
 

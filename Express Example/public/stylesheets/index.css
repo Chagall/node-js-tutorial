@@ -1,0 +1,10 @@
+img {
+    height: 1000px;
+    width: 800px;
+    display: block;
+    margin: 36px auto;
+}
+
+body {
+    background-color: black;
+}

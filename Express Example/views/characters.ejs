@@ -4,16 +4,20 @@
         <title>Characters</title>
         <link rel='stylesheet' href='/stylesheets/style.css' />
         <link rel='stylesheet' href='/stylesheets/header.css' />
+        <link rel='stylesheet' href='/stylesheets/characters.css' />
     </head>
     <body>
         <% include templates/header.ejs %>
-        <h1 class="page-title">Characters Page</h1>
-        <h2>List of Characters</h2>
+
+        <h1>Characters</h1>
+
         <% charactersList.forEach(function(character){ %>
-        <div class="character-description-container">
-            <img src="/images/<%= character.name %>.png" alt="Character Image" class="character-image">
-            <p class="character-name"><%= character.name %></p>
-            <p class="character-description"><%= character.description %></p>
+        <div style="display: inline-block">
+        <div class="character-container">
+            <a href="/characters/<%= character.url%>">
+            <img src="/images/<%= character.name %>.png" alt="Character Image" class="character-image"></a>
+            <p class="character-name"><span class="character-name-span"><%= character.name %></span></p>
+        </div>
         </div>
         <% }); %>
     </body>
