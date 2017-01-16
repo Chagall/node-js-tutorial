@@ -1,12 +1,27 @@
 var express = require('express');
 var router = express.Router();
-var characters = require('../json_data/characters.json');
+var mongoose = require('mongoose');
+
+Character = require('../model/character.js');
+
+var characters;
 
 /* GET characters page. */
 router.get('/', function(req, res, next) {
-    res.render('characters', {
-        charactersList: characters
-    });
+    mongoose.connect('mongodb://localhost/pennydreadful');
+
+    Character.getCharacters()
+        .then(function(instance) {
+            characters = instance;
+            res.render('characters', {
+                charactersList: characters
+            });
+            mongoose.disconnect();
+        })
+        .catch(function(err){
+            mongoose.disconnect();
+            console.log(err);
+        });
 });
 
 

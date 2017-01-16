@@ -45,7 +45,6 @@ router.get('/', function(req, res) {
 
     Season.getSeasonByName("Season 1")
         .then(function(instance){
-            console.log(instance);
             seasonList = instance;
             return Episode.getEpisodesBySeason(1);
         })
@@ -58,6 +57,7 @@ router.get('/', function(req, res) {
             mongoose.disconnect();
         })
         .catch(function(err){
+            mongoose.disconnect();
             console.log(err);
         });
 });
