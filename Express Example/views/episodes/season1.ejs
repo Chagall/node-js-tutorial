@@ -25,9 +25,9 @@
 
             <% episodesList.forEach(function(episode){ %>
             <div class="episode-container">
-                <img src="/images/Evelyn Poole.png" alt="Episode Image" class="episode-image">
-                <p class="episode-description">Episode Number: <%= episode.number %></p>
+                <img src="<%= episode.imgUrl %>.jpg" alt="Episode Image" class="episode-image img-responsive img-rounded center-block">
                 <p class="episode-description">Title: <%= episode.title %></p>
+                <p class="episode-description">Episode Number: <%= episode.number %></p>
                 <p class="episode-description">Written By: <%= episode.writtenBy %></p>
                 <p class="episode-description">Directed By: <%= episode.directedBy %></p>
                 <p class="episode-description">Original Airing Date: <%= episode.airingDate %></p>

@@ -37,9 +37,8 @@
 }
 
 .episode-image {
-    width: 200px;
-    height: 256px;
-    float: left;
+    width: 256px;
+    height: 512px;
     margin:16px;
 }
 
