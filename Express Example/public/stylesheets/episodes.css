@@ -1,17 +1,6 @@
-/* Seasons Page */
-.season-container {
-    height: 33%;
-    width: 33%;
-    display: inline-block;
-    margin-bottom: 48px;
-}
-
 .season-image {
-    height: 500px;
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .season-links-p {

@@ -1,7 +1,6 @@
 .character-container {
-    position: relative;
-    display: block;
-    margin: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .character-image {
@@ -10,11 +9,14 @@
 }
 .character-name {
     position: absolute;
+    width: 100%;
     top: 200px;
-    text-align: justify;
+    text-align: center;
 }
 
 .character-name-span {
+    text-align: center;
+    width: 100%;
     color: white;
     font: bold 16px Helvetica, Sans-Serif;
     background: rgb(0, 0, 0); /* fallback color */
