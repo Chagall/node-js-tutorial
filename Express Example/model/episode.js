@@ -34,7 +34,7 @@ var episodeSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    imageUrl: {
+    imgUrl: {
         type: String,
         required: true
     }
