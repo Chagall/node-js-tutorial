@@ -9,17 +9,15 @@
 }
 
 .character-name {
+    font: 18px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
     position: absolute;
     width: 100%;
-    top: 200px;
-    text-align: center;
+    top: 220px;;
 }
 
 .character-name-span {
-    text-align: center;
     width: 100%;
-    color: white;
-    font: bold 16px Helvetica, Sans-Serif;
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
