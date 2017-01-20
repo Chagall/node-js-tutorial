@@ -23,7 +23,7 @@ var episodeSchema = mongoose.Schema({
         required: true
     },
     airingDate: {
-        type: Date,
+        type: String,
         required: true
     },
     usViewers: {
